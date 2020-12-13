@@ -1,13 +1,17 @@
 #!/usr/bin/env node
 
-const stdin = process.openStdin()
+const verify = require('./lib/verify')
 
-var data = ''
+async function main() {
+  const stdin = process.openStdin()
 
-stdin.on('data', (chunk) => {
-  data += chunk
-})
+  let data = ''
 
-stdin.on('end', () => {
-  console.log('DATA:\n' + data)
-})
+  stdin.on('data', (chunk) => {
+    data += chunk
+  })
+
+  stdin.on('end', () => verify(data))
+}
+
+main()
