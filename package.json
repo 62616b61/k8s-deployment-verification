@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "whynotcrybot",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^18.0.12",
+    "yaml": "^1.10.0"
+  }
 }
