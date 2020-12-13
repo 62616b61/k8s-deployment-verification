@@ -1,0 +1,7 @@
+apiVersion: apps/v1
+
+kind: Deployment
+metadata:
+  annotations:
+    github.com/repo: whynotcrybot/fushigi
+    github.com/sha: 3552e8029d964b3ee4f692d5479f1a9430b28e97
